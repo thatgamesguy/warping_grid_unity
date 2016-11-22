@@ -9639,6 +9639,14 @@ See Also: CanvasRenderer.SetMaterialCount, CanvasRenderer.SetTexture.</para>
       <param name="name">Name of the buffer variable in shader code.</param>
       <param name="texture">Texture to set.</param>
     </member>
+    <member name="M:UnityEngine.ComputeShader.SetTextureFromGlobal(System.Int32,System.String,System.String)">
+      <summary>
+        <para>Set a texture parameter from a global texture property.</para>
+      </summary>
+      <param name="kernelIndex">For which kernel the texture is being set. See FindKernel.</param>
+      <param name="name">Name of the buffer variable in shader code.</param>
+      <param name="globalTextureName">Global texture property to assign to shader.</param>
+    </member>
     <member name="M:UnityEngine.ComputeShader.SetVector(System.String,UnityEngine.Vector4)">
       <summary>
         <para>Set a vector parameter.</para>
@@ -10949,7 +10957,9 @@ Sometimes it is not possible to project (for example when the joints form a cycl
     </member>
     <member name="T:UnityEngine.DeviceType">
       <summary>
-        <para>Enumeration for SystemInfo.deviceType, denotes a coarse grouping of kinds of devices.</para>
+        <para>Enumeration for SystemInfo.deviceType, denotes a coarse grouping of kinds of devices.
+
+Windows Store Apps: tablets are treated as desktop machines, thus DeviceType.Handheld will only be returned for Windows Phones.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.DeviceType.Console">
@@ -21387,6 +21397,16 @@ Only usable on Android, Windows Phone or Windows Tablets.</para>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone6SPlus">
       <summary>
         <para>iPhone 6S Plus.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone7">
+      <summary>
+        <para>iPhone 7.</para>
+      </summary>
+    </member>
+    <member name="F:UnityEngine.iOS.DeviceGeneration.iPhone7Plus">
+      <summary>
+        <para>iPhone 7 Plus.</para>
       </summary>
     </member>
     <member name="F:UnityEngine.iOS.DeviceGeneration.iPhoneSE1Gen">

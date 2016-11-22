@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/UG/Scenes/Demo.unity
+- path: Assets/Warping Grid/Scenes/Demo.unity
   isLoaded: 1
   isActive: 1
